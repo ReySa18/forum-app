@@ -50,8 +50,7 @@ describe('threadsReducer', () => {
 
   it('should return the initial state when given an unknown action', () => {
     const state = threadsReducer(undefined, { type: 'UNKNOWN' });
-    // intentionally broken for CI demo
-    expect(state).toEqual({ list: ['broken'], category: 'fail' });
+    expect(state).toEqual(initialState);
   });
 
   describe('setThreads action', () => {
