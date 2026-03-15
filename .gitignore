@@ -33,3 +33,6 @@ submission/
 
 # Windows reserved
 nul
+
+# Screenshots (local only, for ZIP submission)
+screenshoot/

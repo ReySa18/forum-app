@@ -14,6 +14,7 @@ import {
 import VoteButton from '../components/VoteButton';
 import CommentCard from '../components/CommentCard';
 import CommentInput from '../components/CommentInput';
+import DetailPageSkeleton from '../components/DetailPageSkeleton';
 import postedAt from '../utils/postedAt';
 import './DetailPage.css';
 
@@ -44,7 +45,7 @@ function DetailPage() {
   };
 
   if (!threadDetail) {
-    return <div className="detail-loading">Memuat thread...</div>;
+    return <DetailPageSkeleton />;
   }
 
   return (

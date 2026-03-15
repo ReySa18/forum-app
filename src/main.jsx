@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './states';
 import App from './App';
+import 'react-loading-skeleton/dist/skeleton.css';
 import './index.css';
 
 createRoot(document.getElementById('root')).render(
