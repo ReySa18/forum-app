@@ -1,0 +1,53 @@
+.catfilter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.catfilter-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.catfilter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.catfilter-chip {
+  padding: 0.375rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.catfilter-chip:hover {
+  opacity: 0.85;
+}
+
+.catfilter-chip.active {
+  background: var(--accent-primary);
+  color: white;
+}
+
+/* ============================================
+   MOBILE (< 768px)
+   ============================================ */
+@media (max-width: 767px) {
+  .catfilter-chips {
+    gap: 0.375rem;
+  }
+
+  .catfilter-chip {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
+  }
+}

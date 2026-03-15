@@ -1,0 +1,38 @@
+.comment-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.comment-input-textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: var(--font-sans);
+}
+
+.comment-input-submit {
+  align-self: flex-end;
+  padding: 0.625rem 1.5rem;
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.comment-input-submit:hover {
+  opacity: 0.9;
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   MOBILE (< 768px) — full-width button
+   ============================================ */
+@media (max-width: 767px) {
+  .comment-input-submit {
+    align-self: stretch;
+    text-align: center;
+  }
+}

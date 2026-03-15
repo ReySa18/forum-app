@@ -1,0 +1,39 @@
+.vote-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.vote-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: var(--radius-md);
+  background: transparent;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.vote-btn:hover {
+  background: var(--bg-hover);
+}
+
+.vote-count {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* ============================================
+   MOBILE (< 768px) — larger touch targets
+   ============================================ */
+@media (max-width: 767px) {
+  .vote-btn {
+    padding: 0.5rem 0.625rem;
+    min-height: 36px;
+    min-width: 36px;
+  }
+}

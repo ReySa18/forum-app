@@ -1,0 +1,142 @@
+.thread-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.thread-card:hover {
+  border-color: var(--border-light);
+}
+
+.thread-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.thread-card-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.thread-card-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.thread-card-owner {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.thread-card-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.thread-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.thread-card-title:hover {
+  color: var(--text-accent);
+}
+
+.thread-card-body {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.thread-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  gap: 0.5rem;
+}
+
+.thread-card-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thread-card-comment-count {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.thread-card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--text-accent);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   MOBILE (< 768px)
+   ============================================ */
+@media (max-width: 767px) {
+  .thread-card {
+    padding: 1rem;
+  }
+
+  .thread-card-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .thread-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .thread-card-owner {
+    font-size: 0.8125rem;
+  }
+
+  .thread-card-title {
+    font-size: 0.9375rem;
+  }
+
+  .thread-card-body {
+    font-size: 0.8125rem;
+    margin-bottom: 0.5rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .thread-card-footer {
+    padding-top: 0.5rem;
+  }
+
+  .thread-card-footer-left {
+    gap: 0.5rem;
+  }
+}

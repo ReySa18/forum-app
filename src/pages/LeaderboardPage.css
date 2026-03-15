@@ -1,0 +1,51 @@
+.leaderboard-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.leaderboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ============================================
+   MOBILE (< 768px)
+   ============================================ */
+@media (max-width: 767px) {
+  .leaderboard-container {
+    padding: 0.75rem;
+  }
+
+  .leaderboard-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .leaderboard-list {
+    gap: 0.5rem;
+  }
+
+  .leaderboard-header {
+    padding: 0 0.75rem 0.375rem;
+  }
+}
