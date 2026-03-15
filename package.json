@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "preview": "vite preview",
     "test": "vitest run",
     "cypress:run": "cypress run",
-    "e2e": "start-server-and-test dev http://localhost:5173 cypress:run"
+    "e2e": "start-server-and-test dev http://localhost:5173 cypress:run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
@@ -36,6 +38,18 @@
     "jsdom": "^29.0.0",
     "start-server-and-test": "^2.1.5",
     "vite": "^8.0.0",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.0",
+    "storybook": "^10.2.19",
+    "@storybook/react-vite": "^10.2.19",
+    "@chromatic-com/storybook": "^5.0.1",
+    "@storybook/addon-vitest": "^10.2.19",
+    "@storybook/addon-a11y": "^10.2.19",
+    "@storybook/addon-docs": "^10.2.19",
+    "@storybook/addon-onboarding": "^10.2.19",
+    "prop-types": "^15.8.1",
+    "eslint-plugin-storybook": "^10.2.19",
+    "playwright": "^1.58.2",
+    "@vitest/browser-playwright": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.0"
   }
 }
